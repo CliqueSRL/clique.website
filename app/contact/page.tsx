@@ -8,20 +8,20 @@ const socials = [
 	{
 		icon: <Phone size={20} />,
 		href: "tel:+393499117098",
-		label: "Phone",
-		handle: "Ecco il numero di Paolo",
+		handle: "Phone",
+		label: "Ecco il numero di Paolo",
 	},
 	{
 		icon: <Mail size={20} />,
 		href: "mailto:amministrazione@cliquesrl.it",
-		label: "Email",
-		handle: "amministrazione@cliquesrl.it",
+		handle: "Email",
+		label: "amministrazione@cliquesrl.it",
 	},
 	{
 		icon: <Github size={20} />,
 		href: "https://github.com/CliqueSRL",
-		label: "Github",
-		handle: "CliqueSRL",
+		handle: "Github",
+		label: "CliqueSRL",
 	},
 ];
 
