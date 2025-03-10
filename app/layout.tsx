@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "cliquesrl.it",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://avatars.githubusercontent.com/u/165336393",
         width: 1920,
         height: 1080,
       },
@@ -36,10 +36,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
   },
   icons: {
     shortcut: "/favicon.png",
