@@ -3,7 +3,6 @@ import { allProjects } from "contentlayer/generated";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
 import "./mdx.css";
-import { ReportView } from "./view";
 import { Redis } from "@upstash/redis";
 
 export const revalidate = 60;
@@ -34,7 +33,6 @@ export default async function PostPage({ params }: Props) {
 
   const views = {} as any;
 
-      //<ReportView slug={project.slug} />
   return (
     <div className="bg-zinc-50 min-h-screen">
       <Header project={project} views={views} />
