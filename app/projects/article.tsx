@@ -1,6 +1,5 @@
 import type { Project } from "@/.contentlayer/generated";
 import Link from "next/link";
-import { Eye, View } from "lucide-react";
 
 type Props = {
 	project: Project;
@@ -15,9 +14,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
 						{project.date ? (
 							<time dateTime={new Date(project.date).toISOString()}>
-								{Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
-									new Date(project.date),
-								)}
+								{new Date(project.date).getFullYear()}
 							</time>
 						) : (
 							<span>SOON</span>

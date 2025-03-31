@@ -10,9 +10,9 @@ export const revalidate = 60;
 export default async function ProjectsPage() {
   const views = {} as any;
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "configuratore")!;
+  const top2 = allProjects.find((project) => project.slug === "hexamina")!;
+  const top3 = allProjects.find((project) => project.slug === "hermit")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -76,7 +76,7 @@ export default async function ProjectsPage() {
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                    Read more <span aria-hidden="true">&rarr;</span>
+                    Scopri di più<span aria-hidden="true">&rarr;</span>
                   </p>
                 </div>
               </article>
