@@ -47,7 +47,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
-						<Link target="_blank" href="tel:+393499117098">
+						<Link target="_blank" href="tel:+393664760593">
 							<Phone
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
