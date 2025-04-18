@@ -7,9 +7,9 @@ import Link from "next/link";
 const socials = [
 	{
 		icon: <Phone size={20} />,
-		href: "tel:+393499117098",
+		href: "tel:+393664760593",
 		handle: "Phone",
-		label: "Ecco il numero di Paolo",
+		label: "Leonardo",
 	},
 	{
 		icon: <Mail size={20} />,

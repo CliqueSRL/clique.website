@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Github, Phone } from "lucide-react";
+import { ArrowLeft, Phone } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -8,7 +8,6 @@ type Props = {
 		url?: string;
 		title: string;
 		description: string;
-		repository?: string;
 	};
 
 	views: number;
@@ -18,12 +17,6 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	const [isIntersecting, setIntersecting] = useState(true);
 
 	const links: { label: string; href: string }[] = [];
-	if (project.repository) {
-		links.push({
-			label: "GitHub",
-			href: `https://github.com/${project.repository}`,
-		});
-	}
 	if (project.url) {
 		links.push({
 			label: "Website",
@@ -56,15 +49,6 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 					<div className="flex justify-between gap-8">
 						<Link target="_blank" href="tel:+393499117098">
 							<Phone
-								className={`w-6 h-6 duration-200 hover:font-medium ${
-									isIntersecting
-										? " text-zinc-400 hover:text-zinc-100"
-										: "text-zinc-600 hover:text-zinc-900"
-								} `}
-							/>
-						</Link>
-						<Link target="_blank" href="https://github.com/CliqueSRL">
-							<Github
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
