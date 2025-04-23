@@ -3,6 +3,8 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import ZoomableImage from "@/app/components/zoomable_image";
+
 
 function clsx(...args: any) {
 	return args.filter(Boolean).join(" ");
@@ -95,6 +97,10 @@ const components = {
 			{...props}
 		/>
 	),
+	img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+	<ZoomableImage {...props} />
+	),
+	/*
 	img: ({
 		className,
 		alt,
@@ -106,7 +112,7 @@ const components = {
 			alt={alt}
 			{...props}
 		/>
-	),
+	),*/
 	hr: ({ ...props }) => (
 		<hr className="my-4 border-zinc-200 md:my-8" {...props} />
 	),
