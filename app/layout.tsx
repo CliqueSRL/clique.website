@@ -6,12 +6,12 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "cliquesrl.it",
-    template: "%s | cliquesrl.it",
+    default: "Clique SRL",
+    template: "%s | Clique SRL",
   },
   description: "description",
   openGraph: {
-    title: "cliquesrl.it",
+    title: "Clique SRL",
     description:
       "description",
     url: "https://cliquesrl.it",
