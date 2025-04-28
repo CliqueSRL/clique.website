@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "description",
     url: "https://cliquesrl.it",
-    siteName: "cliquesrl.it",
+    siteName: "Clique SRL",
     images: [
       {
         url: "https://avatars.githubusercontent.com/u/165336393",
