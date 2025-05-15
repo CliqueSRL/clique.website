@@ -8,8 +8,8 @@ const socials = [
   {
     icon: <Phone size={20} />,
     href: "tel:+393664760593",
-    handle: "Phone",
-    label: "Leonardo",
+    handle: "Leonardo",
+    label: "+39 366 476 0593",
   },
   {
     icon: <Mail size={20} />,
