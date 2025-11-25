@@ -48,7 +48,7 @@ export default function Example() {
 
       <main className="flex flex-grow items-center justify-center">
         <div className="container mx-auto flex w-full items-center justify-center px-4">
-          <div className="mx-auto grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+          <div className="mx-auto grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-2 lg:gap-16">
             {socials.map((s) => (
               <Card key={s.handle}>
                 <Link
