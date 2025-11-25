@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Link from "next/link";
@@ -16,13 +16,7 @@ const socials = [
     href: "mailto:amministrazione@cliquesrl.it",
     handle: "Email",
     label: "amministrazione@cliquesrl.it",
-  },
-  {
-    icon: <Github size={20} />,
-    href: "https://github.com/CliqueSRL",
-    handle: "Github",
-    label: "CliqueSRL",
-  },
+  }
 ];
 
 function Footer() {
