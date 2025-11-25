@@ -35,7 +35,7 @@ export default function Home() {
   const hideIntro = !ready && !animate;
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col items-center justify-center w-screen h-[100svh] overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className={clsx("my-16", animate && "animate-fade-in", hideIntro && "opacity-0")}>
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
