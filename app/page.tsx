@@ -14,6 +14,14 @@ const navigation = [
 
 export default function Home() {
   const [animate, setAnimate] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   useEffect(() => {
     const hasVisited = sessionStorage.getItem("homeVisited");
@@ -48,12 +56,13 @@ export default function Home() {
           "absolute inset-0 -z-10",
           animate && "animate-fade-in"
         )}
-        quantity={100}
+        quantity={isMobile ? 30 : 100}
       />
 
       <h1
         className={clsx(
           "py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text",
+          !animate && "opacity-0",
           animate && "animate-title"
         )}
       >
