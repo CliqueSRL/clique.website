@@ -43,7 +43,7 @@ function Footer() {
 
 export default function Example() {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+    <div className="flex min-h-[100svh] flex-col bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
 
       <main className="flex flex-grow items-center justify-center">
