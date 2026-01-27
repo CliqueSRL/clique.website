@@ -8,7 +8,7 @@ const socials = [
   {
     icon: <Phone size={20} />,
     href: "tel:+393664760593",
-    handle: "Leonardo<br>Petruccelli",
+    handle: "Leonardo Petruccelli",
     label: "+39 366 476 0593",
   },
   {
@@ -65,7 +65,7 @@ export default function Example() {
                   </span>
                   <div className="z-10 flex flex-col items-center">
                     <span className="font-display text-zinc-200 duration-150 group-hover:text-white lg:text-xl xl:text-3xl">
-                      {s.handle}
+                      {s.handle.split(' ')[0]}<br></br>{s.handle.split(' ')[1] || ''}
                     </span>
                     <span className="mt-4 text-center text-sm text-zinc-400 duration-1000 group-hover:text-zinc-200">
                       {s.label}
