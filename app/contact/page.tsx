@@ -8,7 +8,7 @@ const socials = [
   {
     icon: <Phone size={20} />,
     href: "tel:+393664760593",
-    handle: "Leonardo\nPetruccelli",
+    handle: "Leonardo<br>Petruccelli",
     label: "+39 366 476 0593",
   },
   {
