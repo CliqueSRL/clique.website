@@ -1,5 +1,5 @@
 "use client";
-import { Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Link from "next/link";
@@ -13,9 +13,15 @@ const socials = [
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:amministrazione@cliquesrl.it",
+    href: "mailto:info@cliquesrl.it",
     handle: "Email",
-    label: "amministrazione@cliquesrl.it",
+    label: "info@cliquesrl.it",
+  },
+  {
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/company/cliquesrl",
+    handle: "LinkedIn",
+    label: "Clique S.r.l.",
   }
 ];
 
@@ -31,10 +37,21 @@ function Footer() {
       <p>
         Tel: +39&nbsp;366&nbsp;476&nbsp;0593 · Email:&nbsp;
         <a
-          href="mailto:amministrazione@cliquesrl.it"
+          href="mailto:info@cliquesrl.it"
           className="hover:underline"
         >
-          amministrazione@cliquesrl.it
+          info@cliquesrl.it
+        </a>
+      </p>
+      <p>
+        LinkedIn:&nbsp;
+        <a
+          href="https://www.linkedin.com/company/cliquesrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          Clique S.r.l.
         </a>
       </p>
     </footer>
@@ -48,7 +65,7 @@ export default function Example() {
 
       <main className="flex flex-grow items-center justify-center">
         <div className="container mx-auto flex w-full items-center justify-center px-4">
-          <div className="mx-auto grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-2 lg:gap-16">
+          <div className="mx-auto grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-3 lg:gap-16">
             {socials.map((s) => (
               <Card key={s.handle}>
                 <Link
